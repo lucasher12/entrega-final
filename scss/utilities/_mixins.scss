@@ -1,0 +1,18 @@
+@mixin titles($position, $top, $transform, $font, $spacing, $color){
+    position: $position;
+    top: $top;
+    text-transform: $transform;
+    font-family: $font;
+    letter-spacing: $spacing;
+    color: $color;
+}
+
+@mixin paragraph($top, $transform, $deco, $font, $size, $color, $align){
+    margin-top: $top;
+    text-transform: $transform;
+    text-decoration: $deco;
+    font-family: $font;
+    font-size: $size;
+    color: $color;
+    text-align: $align;
+}

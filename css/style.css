@@ -1,0 +1,357 @@
+.navbar {
+  background-color: #00308F; }
+
+.brand a {
+  color: white; }
+  .brand a:hover {
+    color: #FFD700; }
+
+.navbar-nav {
+  margin-left: auto; }
+  .navbar-nav li a {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: white; }
+    .navbar-nav li a:hover {
+      color: #FFD700; }
+
+.dropdown-menu {
+  background-color: #00308F; }
+  .dropdown-menu:hover {
+    background-color: #00308F; }
+
+.background-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.h1-edit {
+  width: 100%; }
+  .h1-edit h1 {
+    position: relative;
+    top: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Cabin";
+    letter-spacing: 0.1875rem;
+    color: white;
+    background-color: black;
+    padding-left: .5rem;
+    left: 0;
+    right: 0;
+    margin-bottom: 2rem; }
+
+.container-carousel {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem; }
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  margin-top: 2rem;
+  grid-gap: 1.25rem;
+  justify-content: center;
+  padding: 1.25rem; }
+
+.card {
+  background-color: #f0f0f0;
+  border: .5px solid black;
+  margin-bottom: .625rem;
+  overflow: hidden; }
+  .card p {
+    margin-top: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: "Cabin";
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+    padding-left: 1rem; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+@media (max-width: 1050px) {
+  .card-container {
+    grid-template-columns: repeat(2, 2fr); } }
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr; } }
+
+.container-title {
+  text-align: left;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-top: 1.25rem; }
+  .container-title h1 {
+    position: relative;
+    top: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Cabin";
+    letter-spacing: 0.1875rem;
+    color: white;
+    background-color: black;
+    padding-left: .5rem;
+    left: 0;
+    right: 0;
+    margin-bottom: 2rem; }
+
+.faq-section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+  .faq-section h1 {
+    position: relative;
+    top: 1rem;
+    text-transform: uppercase;
+    font-family: "Cabin";
+    letter-spacing: 0.1875rem;
+    color: #00308F;
+    font-size: 2rem;
+    text-align: left;
+    padding-bottom: .8rem; }
+  .faq-section dl dt {
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 1rem;
+    color: #00308F;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .faq-section dl dd {
+    margin-top: 1rem;
+    text-transform: none;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+    color: black;
+    line-height: 1.4;
+    text-align: justify; }
+
+.grid-title {
+  position: relative;
+  top: 1rem;
+  text-transform: uppercase;
+  font-family: "Cabin";
+  letter-spacing: 0.1875rem;
+  color: black;
+  padding-left: .5rem;
+  grid-area: title;
+  grid-column-start: 5;
+  grid-column-end: 7;
+  text-align: right;
+  padding-right: 1.5rem;
+  justify-content: center; }
+  .grid-title h6 {
+    font-size: 2rem; }
+  @media screen and (max-width: 1024px) {
+    .grid-title {
+      width: 100%;
+      grid-column-start: 3;
+      grid-column-end: 4; }
+      .grid-title h6 {
+        font-size: 1.5rem; } }
+  @media screen and (max-width: 768px) {
+    .grid-title {
+      grid-column-start: 1;
+      grid-column-end: 2; }
+      .grid-title h6 {
+        font-size: 2.5rem; } }
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  margin-top: 5rem;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 9rem, auto;
+  grid-template-areas: ". . . title . ." "team1 team1 team2 team2 team3 team3";
+  gap: 1rem; }
+  @media screen and (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 5rem auto;
+      grid-template-areas: ". . title" "team1 team2 team3";
+      gap: 1rem; } }
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 10rem auto auto auto;
+      grid-template-areas: "title" "team1" "team2" "team3"; } }
+
+.grid-item {
+  margin-top: 2rem;
+  text-align: center; }
+  .grid-item p {
+    margin-top: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: "Cabin";
+    font-size: 1rem;
+    color: black;
+    text-align: center; }
+  @media screen and (max-width: 768px) {
+    .grid-item p {
+      font-size: 1.5rem; } }
+
+.team1 {
+  grid-area: team1;
+  grid-column-start: 1;
+  grid-column-end: 3; }
+
+.team2 {
+  grid-area: team2;
+  grid-column-start: 3;
+  grid-column-end: 5; }
+
+.team3 {
+  grid-area: team3;
+  grid-column-start: 5;
+  grid-column-end: 7; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .team1 {
+    grid-area: team1;
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .team2 {
+    grid-area: team2;
+    grid-column-start: 2;
+    grid-column-end: 3; }
+  .team3 {
+    grid-area: team3;
+    grid-column-start: 3;
+    grid-column-end: 4; } }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .team1 {
+    grid-area: team1;
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .team2 {
+    grid-area: team2;
+    grid-column-start: 1;
+    grid-column-end: 2; }
+  .team3 {
+    grid-area: team3;
+    grid-column-start: 1;
+    grid-column-end: 2; } }
+
+.businessdiv h2 {
+  position: relative;
+  top: 1rem;
+  text-transform: uppercase;
+  font-family: "Cabin";
+  letter-spacing: 0.1875rem;
+  color: #00308F;
+  font-size: 2rem;
+  text-align: left;
+  margin-left: 1.2rem; }
+
+.businessdiv p {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Cabin";
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem; }
+
+footer {
+  position: absolute;
+  flex-direction: row-reverse;
+  width: 100%;
+  margin-top: auto; }
+  footer h5 {
+    position: absolute;
+    top: 15rem;
+    text-transform: uppercase;
+    font-family: "Cabin";
+    letter-spacing: 0.1875rem;
+    color: white;
+    padding-left: 1.2rem;
+    padding-top: 1rem;
+    left: 0;
+    right: 0;
+    justify-content: left;
+    background-color: #00308F; }
+
+footer h6 {
+  position: absolute;
+  top: 1rem;
+  text-transform: uppercase;
+  font-family: "Cabin";
+  letter-spacing: 0.1875rem;
+  color: white;
+  margin-left: .75rem;
+  margin-right: .75rem;
+  padding-right: .5rem;
+  left: 0;
+  right: 0;
+  background-color: black;
+  text-align: right; }
+
+.footer-gral h5 {
+  position: absolute;
+  top: none;
+  text-transform: uppercase;
+  font-family: "Cabin";
+  letter-spacing: 0.1875rem;
+  color: white;
+  padding-left: 1.2rem;
+  left: 0;
+  right: 0;
+  justify-content: left;
+  background-color: #00308F; }
+
+.footerInformation, .footerInformation-2 {
+  position: absolute;
+  top: 18rem;
+  padding-top: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  left: 0;
+  text-decoration: none;
+  list-style: none;
+  background-color: #00308F; }
+  .footerInformation li a, .footerInformation-2 li a {
+    padding-left: 1.25rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.375rem;
+    letter-spacing: .1875rem;
+    color: white; }
+    .footerInformation li a:hover, .footerInformation-2 li a:hover {
+      color: #FFD700; }
+
+.footerNewsletter {
+  position: absolute;
+  top: 4rem;
+  right: .625rem;
+  text-align: right;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.375rem;
+  letter-spacing: .1875rem;
+  white-space: nowrap;
+  color: black; }
+
+.card-body h2, .card-body h3, .card-body h4 {
+  font-size: 1.25rem; }
+
+.card-body p {
+  font-size: 0.85rem;
+  position: relative;
+  text-align: right; }

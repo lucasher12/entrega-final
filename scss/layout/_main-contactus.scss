@@ -1,0 +1,128 @@
+.grid-title{
+    @include titles(relative, 1rem, uppercase, 'Cabin', .1875rem, black);
+    padding-left: .5rem;
+    grid-area: title;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    text-align: right;
+    padding-right: 1.5rem;
+    justify-content: center;
+    h6{
+        font-size: 2rem;
+    }
+    @media screen and (max-width: 1024px){
+        width: 100%;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        h6{
+            font-size: 1.5rem;
+        }
+    }
+    @media screen and (max-width: 768px){
+        grid-column-start: 1;
+        grid-column-end: 2;
+        h6{
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    margin-top: 5rem;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: 9rem, auto; 
+    grid-template-areas:
+    ". . . title . ."
+    "team1 team1 team2 team2 team3 team3"
+    ;
+    gap: 1rem; 
+    @media screen and (max-width: 1024px){
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: 5rem auto; 
+        grid-template-areas:
+        ". . title"
+        "team1 team2 team3"
+        ;
+        gap: 1rem; 
+    }
+    @media screen and (max-width:768px){
+        grid-template-columns: 1fr; 
+        grid-template-rows: 10rem auto auto auto; 
+        grid-template-areas:
+        "title"
+        "team1"
+        "team2"
+        "team3"
+        ;
+    }
+}
+
+.grid-item{
+    margin-top: 2rem;
+    text-align: center;
+    p{
+        @include paragraph(1rem, capitalize, none, 'Cabin', 1rem, black, center);
+    }
+    @media screen and (max-width:768px){
+        p{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.team1{
+    grid-area: team1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.team2{
+    grid-area: team2;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.team3{
+    grid-area: team3;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+@media (min-width:768px) and (max-width: 1024px){
+    .team1{
+        grid-area: team1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .team2{
+        grid-area: team2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .team3{
+        grid-area: team3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+}
+
+@media (min-width:320px) and (max-width: 767px){
+    .team1{
+        grid-area: team1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .team2{
+        grid-area: team2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .team3{
+        grid-area: team3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+

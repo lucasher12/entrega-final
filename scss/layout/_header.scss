@@ -1,0 +1,36 @@
+
+.navbar{
+    background-color: $background-b;
+}
+
+.brand{
+    a{
+        color: white;
+        &:hover{
+            color: $background-y;
+        }
+    }
+}
+
+.navbar-nav{
+    margin-left: auto;
+    li{
+        a{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            color: white;
+            &:hover{
+                color: $background-y;
+            }
+        }
+    }
+}
+
+.dropdown-menu{
+    background-color: $background-b;
+    &:hover{
+        background-color: $background-b;
+    }
+}
+
+

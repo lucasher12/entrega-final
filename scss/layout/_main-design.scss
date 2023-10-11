@@ -1,0 +1,56 @@
+.container-carousel{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    margin-top: 2rem;
+    grid-gap: 1.25rem;
+    justify-content: center;
+    padding: 1.25rem;
+}
+
+.card{
+    background-color: #f0f0f0;
+    border: .5px solid black;
+    margin-bottom: .625rem;
+    overflow: hidden;
+    p{
+        @include paragraph(1rem, capitalize, none, 'Cabin', 1rem, black, left);
+        padding-left: 1rem;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1050px){
+    .card-container {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+@media (max-width: 768px){
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.container-title{
+    text-align: left;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-top: 1.25rem;
+    h1{
+        @include titles(relative, 1.5rem, uppercase, 'Cabin', .1875rem, white);
+        background-color: black;
+        padding-left: .5rem;
+        left: 0;
+        right: 0;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,87 @@
+footer{
+    position: absolute;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-top: auto;
+    h5{
+        @include titles(absolute, 15rem, uppercase, 'Cabin', .1875rem, white);
+        padding-left: 1.2rem;
+        padding-top: 1rem;
+        left: 0;
+        right: 0;
+        justify-content: left;
+        background-color: $background-b
+    }
+}
+
+footer{
+    h6{
+        @include titles(absolute, 1rem, uppercase, 'Cabin', .1875rem, white);
+        margin-left: .75rem;
+        margin-right: .75rem;
+        padding-right: .5rem;
+        left: 0;
+        right: 0;
+        background-color: black;
+        text-align: right;
+    }
+}
+
+.footer-gral{
+    h5{
+        @include titles(absolute, none, uppercase, 'Cabin', .1875rem, white);
+        padding-left: 1.2rem;
+        left: 0;
+        right: 0;
+        justify-content: left;
+        background-color: $background-b;
+    }
+}
+
+
+.footerInformation{
+    position: absolute;
+    top: 18rem;
+    padding-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    left: 0;
+    text-decoration: none;
+    list-style: none;
+    background-color: $background-b;
+    li{
+        a{
+            padding-left: 1.25rem;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-family: 'Cabin', sans-serif;
+            font-size: 1.375rem;
+            letter-spacing: .1875rem;
+            color: white;
+            &:hover{
+                color: $background-y
+            }
+        }
+    }
+}
+
+.footerInformation-2{
+    @extend .footerInformation;
+}
+
+.footerNewsletter{
+    position: absolute;
+    top: 4rem;
+    right: .625rem;
+    text-align: right;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.375rem;
+    letter-spacing: .1875rem;
+    white-space: nowrap;
+    color: black;
+}
+
+

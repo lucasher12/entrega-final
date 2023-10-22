@@ -16,3 +16,10 @@
     color: $color;
     text-align: $align;
 }
+
+@mixin containertitles($align, $mleft, $mright, $mtop){
+    text-align: $align;
+    margin-left: $mleft;
+    margin-right: $mright;
+    margin-top: $mtop;
+}

@@ -1,20 +1,4 @@
-.container-title{
-    text-align: left;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-    margin-top: 1.25rem;
-    h1{
-        @include titles(relative, 1.5rem, uppercase, 'Cabin', .1875rem, white);
-        background-color: black;
-        padding-left: .5rem;
-        left: 0;
-        right: 0;
-        margin-bottom: 2rem;
-        border-radius: 0.2rem;
-    }
-}
-
-.multidiv{
+.hybriddiv{
     h2{
         @include titles(relative, 1rem, uppercase, 'Cabin', .1875rem, $background-b);
         font-size: 2rem; 
@@ -23,7 +7,7 @@
     }
 }
 
-.multip{
+.hybridp{
     p{
         @include paragraph(1rem, none, none, 'Roboto', 1rem, black, left);
         color: black;

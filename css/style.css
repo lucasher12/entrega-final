@@ -20,6 +20,12 @@
   .dropdown-menu:hover {
     background-color: #00308F; }
 
+.navbar-toggler-icon {
+  background-image: url(../assets/img/toggler.png); }
+
+.navbar-toggler {
+  border: none; }
+
 .background-image {
   position: relative;
   top: 0;
@@ -40,7 +46,12 @@
     padding-left: .5rem;
     left: 0;
     right: 0;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    border-radius: 0.2rem; }
+
+.btn-primary {
+  --bs-btn-bg: #00308F;
+  --bs-btn-border-color: black; }
 
 .container-carousel {
   margin-left: 1.25rem;
@@ -81,23 +92,19 @@ img {
   .card-container {
     grid-template-columns: 1fr; } }
 
-.container-title {
-  text-align: left;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-  margin-top: 1.25rem; }
-  .container-title h1 {
-    position: relative;
-    top: 1.5rem;
-    text-transform: uppercase;
-    font-family: "Cabin";
-    letter-spacing: 0.1875rem;
-    color: white;
-    background-color: black;
-    padding-left: .5rem;
-    left: 0;
-    right: 0;
-    margin-bottom: 2rem; }
+.container-title h1 {
+  position: relative;
+  top: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Cabin";
+  letter-spacing: 0.1875rem;
+  color: white;
+  background-color: black;
+  padding-left: .5rem;
+  left: 0;
+  right: 0;
+  margin-bottom: 2rem;
+  border-radius: 0.2rem; }
 
 .faq-section {
   background-color: #f7f7f7;
@@ -150,38 +157,41 @@ img {
   text-align: right;
   padding-right: 1.5rem;
   justify-content: center; }
-  .grid-title h6 {
+  .grid-title h1 {
     font-size: 2rem; }
   @media screen and (max-width: 1024px) {
     .grid-title {
       width: 100%;
       grid-column-start: 3;
       grid-column-end: 4; }
-      .grid-title h6 {
+      .grid-title h1 {
         font-size: 1.5rem; } }
   @media screen and (max-width: 768px) {
     .grid-title {
       grid-column-start: 1;
       grid-column-end: 2; }
-      .grid-title h6 {
+      .grid-title h1 {
         font-size: 2.5rem; } }
 
 .grid-container {
   display: grid;
   width: 100%;
   margin-top: 5rem;
+  margin-bottom: 3rem;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 9rem, auto;
   grid-template-areas: ". . . title . ." "team1 team1 team2 team2 team3 team3";
   gap: 1rem; }
   @media screen and (max-width: 1024px) {
     .grid-container {
+      margin-bottom: 6rem;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: 5rem auto;
       grid-template-areas: ". . title" "team1 team2 team3";
       gap: 1rem; } }
   @media screen and (max-width: 768px) {
     .grid-container {
+      margin-bottom: 5rem;
       grid-template-columns: 1fr;
       grid-template-rows: 10rem auto auto auto;
       grid-template-areas: "title" "team1" "team2" "team3"; } }
@@ -200,6 +210,9 @@ img {
   @media screen and (max-width: 768px) {
     .grid-item p {
       font-size: 1.5rem; } }
+  @media screen and (max-width: 420px) {
+    .grid-item p {
+      font-size: 1rem; } }
 
 .team1 {
   grid-area: team1;
@@ -244,6 +257,64 @@ img {
     grid-column-start: 1;
     grid-column-end: 2; } }
 
+.container-title {
+  text-align: left;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-top: 1.25rem; }
+  .container-title h1 {
+    position: relative;
+    top: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Cabin";
+    letter-spacing: 0.1875rem;
+    color: white;
+    background-color: black;
+    padding-left: .5rem;
+    left: 0;
+    right: 0;
+    margin-bottom: 2rem;
+    border-radius: 0.2rem; }
+  .container-title h2 h3 h4 h5 {
+    position: relative;
+    top: 1.2rem;
+    text-transform: uppercase;
+    font-family: "Cabin";
+    letter-spacing: 0.1875rem;
+    color: black;
+    padding-top: 2rem; }
+  .container-title p {
+    margin-top: 1rem;
+    text-transform: none;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+    color: black;
+    line-height: 1.4;
+    text-align: justify;
+    padding-bottom: 1rem; }
+
+.container-title {
+  text-align: left;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-top: 1.25rem; }
+  .container-title h1 {
+    position: relative;
+    top: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Cabin";
+    letter-spacing: 0.1875rem;
+    color: white;
+    background-color: black;
+    padding-left: .5rem;
+    left: 0;
+    right: 0;
+    margin-bottom: 2rem;
+    border-radius: 0.2rem; }
+
 .businessdiv h2 {
   position: relative;
   top: 1rem;
@@ -255,52 +326,127 @@ img {
   text-align: left;
   margin-left: 1.2rem; }
 
-.businessdiv p {
+.businessp p {
   margin-top: 1rem;
-  text-transform: capitalize;
+  text-transform: none;
   text-decoration: none;
-  font-family: "Cabin";
+  font-family: "Roboto";
   font-size: 1rem;
   color: black;
   text-align: left;
+  color: black;
+  line-height: 1.4;
+  text-align: justify;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem; }
+
+.container-title {
+  text-align: left;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-top: 1.25rem; }
+  .container-title h1 {
+    position: relative;
+    top: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Cabin";
+    letter-spacing: 0.1875rem;
+    color: white;
+    background-color: black;
+    padding-left: .5rem;
+    left: 0;
+    right: 0;
+    margin-bottom: 2rem;
+    border-radius: 0.2rem; }
+
+.multidiv h2 {
+  position: relative;
+  top: 1rem;
+  text-transform: uppercase;
+  font-family: "Cabin";
+  letter-spacing: 0.1875rem;
+  color: #00308F;
+  font-size: 2rem;
+  text-align: left;
+  margin-left: 1.2rem; }
+
+.multip p {
+  margin-top: 1rem;
+  text-transform: none;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+  color: black;
+  line-height: 1.4;
+  text-align: justify;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem; }
+
+.hybriddiv h2 {
+  position: relative;
+  top: 1rem;
+  text-transform: uppercase;
+  font-family: "Cabin";
+  letter-spacing: 0.1875rem;
+  color: #00308F;
+  font-size: 2rem;
+  text-align: left;
+  margin-left: 1.2rem; }
+
+.hybridp p {
+  margin-top: 1rem;
+  text-transform: none;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+  color: black;
+  line-height: 1.4;
+  text-align: justify;
   margin-left: 1.2rem;
   margin-right: 1.2rem; }
 
 footer {
   position: absolute;
   flex-direction: row-reverse;
-  width: 100%;
-  margin-top: auto; }
+  width: 100%; }
   footer h5 {
     position: absolute;
-    top: 15rem;
+    top: 1rem;
+    text-transform: uppercase;
+    font-family: "Cabin";
+    letter-spacing: 0.1875rem;
+    color: white;
+    margin-left: .75rem;
+    margin-right: .75rem;
+    padding-right: .5rem;
+    left: 0;
+    right: 0;
+    background-color: black;
+    text-align: right;
+    border-radius: 0.2rem; }
+  @media screen and (max-width: 350px) {
+    footer {
+      margin-bottom: 2rem; } }
+  footer h6 {
+    position: absolute;
+    top: 13rem;
     text-transform: uppercase;
     font-family: "Cabin";
     letter-spacing: 0.1875rem;
     color: white;
     padding-left: 1.2rem;
     padding-top: 1rem;
+    padding-bottom: 0.5rem;
     left: 0;
     right: 0;
     justify-content: left;
     background-color: #00308F; }
 
-footer h6 {
-  position: absolute;
-  top: 1rem;
-  text-transform: uppercase;
-  font-family: "Cabin";
-  letter-spacing: 0.1875rem;
-  color: white;
-  margin-left: .75rem;
-  margin-right: .75rem;
-  padding-right: .5rem;
-  left: 0;
-  right: 0;
-  background-color: black;
-  text-align: right; }
-
-.footer-gral h5 {
+.footer-gral h6 {
   position: absolute;
   top: none;
   text-transform: uppercase;
@@ -308,6 +454,7 @@ footer h6 {
   letter-spacing: 0.1875rem;
   color: white;
   padding-left: 1.2rem;
+  top: 1rem;
   left: 0;
   right: 0;
   justify-content: left;
@@ -315,7 +462,7 @@ footer h6 {
 
 .footerInformation, .footerInformation-2 {
   position: absolute;
-  top: 18rem;
+  top: 16rem;
   padding-top: 1rem;
   width: 100%;
   justify-content: space-between;
@@ -334,11 +481,13 @@ footer h6 {
     .footerInformation li a:hover, .footerInformation-2 li a:hover {
       color: #FFD700; }
 
+.footerInformation-2 {
+  top: 4rem; }
+
 .footerNewsletter {
   position: absolute;
   top: 4rem;
-  right: .625rem;
-  text-align: right;
+  padding-left: .625rem;
   text-decoration: none;
   list-style: none;
   text-transform: capitalize;
@@ -347,6 +496,12 @@ footer h6 {
   letter-spacing: .1875rem;
   white-space: nowrap;
   color: black; }
+
+.wrap-text {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; }
 
 .card-body h2, .card-body h3, .card-body h4 {
   font-size: 1.25rem; }

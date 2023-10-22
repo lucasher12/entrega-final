@@ -1,3 +1,19 @@
+.container-title{
+    text-align: left;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    margin-top: 1.25rem;
+    h1{
+        @include titles(relative, 1.5rem, uppercase, 'Cabin', .1875rem, white);
+        background-color: black;
+        padding-left: .5rem;
+        left: 0;
+        right: 0;
+        margin-bottom: 2rem;
+        border-radius: 0.2rem;
+    }
+}
+
 .businessdiv{
     h2{
         @include titles(relative, 1rem, uppercase, 'Cabin', .1875rem, $background-b);
@@ -5,8 +21,14 @@
         text-align: left; 
         margin-left: 1.2rem;
     }
+}
+
+.businessp{
     p{
-        @include paragraph(1rem, capitalize, none, 'Cabin', 1rem, black, left);
+        @include paragraph(1rem, none, none, 'Roboto', 1rem, black, left);
+        color: black;
+        line-height: 1.4;
+        text-align: justify;
         margin-left: 1.2rem;
         margin-right: 1.2rem;
     }

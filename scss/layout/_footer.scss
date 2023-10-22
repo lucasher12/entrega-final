@@ -2,20 +2,7 @@ footer{
     position: absolute;
     flex-direction: row-reverse;
     width: 100%;
-    margin-top: auto;
     h5{
-        @include titles(absolute, 15rem, uppercase, 'Cabin', .1875rem, white);
-        padding-left: 1.2rem;
-        padding-top: 1rem;
-        left: 0;
-        right: 0;
-        justify-content: left;
-        background-color: $background-b
-    }
-}
-
-footer{
-    h6{
         @include titles(absolute, 1rem, uppercase, 'Cabin', .1875rem, white);
         margin-left: .75rem;
         margin-right: .75rem;
@@ -24,13 +11,28 @@ footer{
         right: 0;
         background-color: black;
         text-align: right;
+        border-radius: 0.2rem
+    }
+    @media screen and (max-width: 350px){
+        margin-bottom: 2rem;
+    }
+    h6{
+        @include titles(absolute, 13rem, uppercase, 'Cabin', .1875rem, white);
+        padding-left: 1.2rem;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        left: 0;
+        right: 0;
+        justify-content: left;
+        background-color: $background-b
     }
 }
 
 .footer-gral{
-    h5{
+    h6{
         @include titles(absolute, none, uppercase, 'Cabin', .1875rem, white);
         padding-left: 1.2rem;
+        top: 1rem;
         left: 0;
         right: 0;
         justify-content: left;
@@ -41,7 +43,7 @@ footer{
 
 .footerInformation{
     position: absolute;
-    top: 18rem;
+    top: 16rem;
     padding-top: 1rem;
     width: 100%;
     justify-content: space-between;
@@ -67,13 +69,13 @@ footer{
 
 .footerInformation-2{
     @extend .footerInformation;
+    top: 4rem;
 }
 
 .footerNewsletter{
     position: absolute;
     top: 4rem;
-    right: .625rem;
-    text-align: right;
+    padding-left: .625rem;
     text-decoration: none;
     list-style: none;
     text-transform: capitalize;
@@ -84,4 +86,10 @@ footer{
     color: black;
 }
 
+.wrap-text{
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%; 
+}
 

@@ -12,24 +12,16 @@
         margin-bottom: 2rem;
         border-radius: 0.2rem;
     }
-}
-
-.multidiv{
-    h2{
-        @include titles(relative, 1rem, uppercase, 'Cabin', .1875rem, $background-b);
-        font-size: 2rem; 
-        text-align: left; 
-        margin-left: 1.2rem;
+    h2 h3 h4 h5{
+        @include titles(relative, 1.2rem, uppercase, 'Cabin', .1875rem, black);
+        padding-top: 2rem;
     }
-}
-
-.multip{
     p{
         @include paragraph(1rem, none, none, 'Roboto', 1rem, black, left);
         color: black;
         line-height: 1.4;
         text-align: justify;
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
+        padding-bottom: 1rem;
     }
 }
+
